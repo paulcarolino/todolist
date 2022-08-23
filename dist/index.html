@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="../Assets/Icons/logo.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <nav class="sidebar">
+            <div class="default-projects">
+                <ul>
+                    <li id="Inbox"><img src="../Assets/Icons/inbox.png">Inbox</li>
+                    <li id="Today"><img src="../Assets/Icons/calendar-today.png">Today</li>
+                    <li id="Week"><img src="../Assets/Icons/calendar-week.png">This week</li>
+                </ul>
+            </div>
+
+            <div class="new-projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li id="addProject">
+                        <img src="../Assets/Icons/playlist-plus.png">Add Project
+                    </li>
+                    <div class="add-project-container">
+                        <div class="project-input">
+                            <input type="text">
+                        </div>
+                        <div class="project-btn">
+                            <button class="add-project-btn">Add</button>
+                            <button class="cancel-project-btn">Cancel
+                            </button>
+                        </div>
+
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div class="title">
+                <h1 id="pageTitle">Default Title</h1>
+            </div>
+
+            <div class="list">
+                <ul>
+                    <li id="addTask"><img src=" ../Assets/Icons/plus-circle.png">Add Task</li>
+                    <!-- <li class="todo-list">
+                        <div class="left-panel">
+                            <input type="checkbox">
+                            <span>Task 1</span>
+                        </div>
+                        <div class="right-panel">
+                            <p class="due-date">02/18/2022</p>
+                            <img src="../Assets/Icons/close-octagon.png">
+                        </div>
+                    </li>
+                    <li class="todo-list">
+                        <div class="left-panel">
+                            <input type="checkbox">
+                            <span>Task 2</span>
+                        </div>
+                        <div class="right-panel">
+                            <p class="due-date">02/18/2022</p>
+                            <img src="../Assets/Icons/close-octagon.png">
+                        </div>
+                    </li> -->
+                    <div class="add-task-container">
+                        <div class="task-input">
+                            <input type="text">
+                        </div>
+                        <div class="task-btn">
+                            <button class="add-task-btn">Add</button>
+                            <button class="cancel-task-btn">Cancel
+                            </button>
+                        </div>
+
+                    </div>
+                </ul>
+
+            </div>
+
+
+        </div>
+    </main>
+
+
+</body>
+
+<script src="main.js"></script>
+
+</html>
