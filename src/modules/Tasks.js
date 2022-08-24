@@ -1,45 +1,42 @@
 import UI from "./UI";
 
 export default class Task {
-    constructor(name, status = "", dueDate = 'No date', projectId = "Inbox") {
-        this.name = name;
-        this.dueDate = dueDate;
-        this.status = status;
-        this.projectId = projectId;
-    }
+  constructor(name, status = "", dueDate = "No date", projectId = "Inbox") {
+    this.name = name;
+    this.dueDate = dueDate;
+    this.status = status;
+    this.projectId = projectId;
+  }
 
-    setName(name) {
-        this.name = name
-    }
+  setName(name) {
+    this.name = name;
+  }
 
-    setStatus(status) {
-        this.status = status;
-    }
+  setStatus(status) {
+    this.status = status;
+  }
 
-    setDate(dueDate) {
-        this.dueDate = dueDate
-    }
+  setDate(dueDate) {
+    this.dueDate = dueDate;
+  }
 
+  setProjectId(projectId) {
+    this.projectId = projectId;
+  }
 
-    setProjectId(projectId) {
-        this.projectId = projectId;
-    }
+  getName() {
+    return this.name;
+  }
 
-    getName() {
-        return this.name;
-    }
+  getProjectId() {
+    return this.projectId;
+  }
 
-    getProjectId() {
-        return this.projectId;
-    }
+  getDate() {
+    return this.dueDate;
+  }
 
-    getDate() {
-        return this.dueDate
-    }
-
-    getStatus() {
-        return this.status;
-    }
-
-
+  getStatus() {
+    return this.status;
+  }
 }
