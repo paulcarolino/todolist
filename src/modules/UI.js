@@ -10,7 +10,7 @@ export default class UI {
                 </div>
              <div class="right-panel">
                 <p class="due-date">${newTask.getDate()}</p>
-                <img src="../Assets/Icons/close-octagon.png">
+                <img src="Assets/Icons/close-octagon.png">
             </div>`;
     document.querySelector(".list>ul").prepend(newTaskElement);
     document.querySelector(".add-task-container").classList.remove("active");
@@ -21,12 +21,12 @@ export default class UI {
     var newProjectElement = document.createElement("li");
     newProjectElement.innerHTML = `
             <div class="left-panel">
-                <img src="../Assets/Icons/format-list-bulleted-square.png">
+                <img src="Assets/Icons/format-list-bulleted-square.png">
                 <span>${newProject.getName()}</span>
             </div>
 
             <div class="right-panel">
-            <img src="../Assets/Icons/delete.png" class="trash-icon">
+            <img src="Assets/Icons/delete.png" class="trash-icon">
             </div>`;
     document.querySelector(".project-input>input").value = "";
     document.querySelector(".new-projects>ul").prepend(newProjectElement);
@@ -53,12 +53,12 @@ export default class UI {
       var projectElement = document.createElement("li");
       projectElement.innerHTML = `
                 <div class="left-panel">
-                    <img src="../Assets/Icons/format-list-bulleted-square.png">
+                    <img src="Assets/Icons/format-list-bulleted-square.png">
                     <span>${Project.getName()}</span>
                 </div>
     
                 <div class="right-panel">
-                <img src="../Assets/Icons/delete.png" class="trash-icon">
+                <img src="Assets/Icons/delete.png" class="trash-icon">
                 </div>`;
       document.querySelector(".new-projects>ul").prepend(projectElement);
     });
@@ -84,7 +84,7 @@ export default class UI {
       newTaskElement.innerHTML += `
                  <div class="right-panel">
                     <p class="due-date">${Task.getDate()}</p>
-                    <img src="../Assets/Icons/close-octagon.png">
+                    <img src="Assets/Icons/close-octagon.png">
                 </div>`;
 
       document.querySelector(".list>ul").prepend(newTaskElement);
@@ -110,7 +110,7 @@ export default class UI {
       newTaskElement.innerHTML += `
             <div class="right-panel">
                     <p class="due-date">${Task.getDate()}</p>
-                    <img src="../Assets/Icons/close-octagon.png">
+                    <img src="Assets/Icons/close-octagon.png">
                 </div>
             `;
       document.querySelector(".list>ul").prepend(newTaskElement);

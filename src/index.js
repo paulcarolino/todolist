@@ -3,7 +3,6 @@ import Project from "./modules/Project";
 import * as Logic from "./modules/Logic";
 import UI from "./modules/UI";
 import Storage from "./modules/Storage";
-import { format, isThisWeek } from "date-fns";
 
 var todolist;
 const Projects = [];
